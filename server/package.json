@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+	"start": "nodemon app.js --ignore lib/db.json",
+	"reset": "node ./lib/reset"
+  },
+  "author": "upsales",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lowdb": "^1.0.0",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
