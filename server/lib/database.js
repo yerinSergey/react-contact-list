@@ -1,13 +1,13 @@
 const low = require('lowdb');
 const shortid = require('shortid')
 const FileSync = require('lowdb/adapters/FileSync');
-const adapter = new FileSync(__dirname+'/db.json');
+const adapter = new FileSync(__dirname + '/db.json');
 const db = low(adapter);
 
 const defaultState = {
 	contacts: [
-		{id: shortid.generate(), name: 'John Wilson', phone: ''},
-		{id: shortid.generate(), name: 'Jane Wilson', phone: ''}
+		{ id: shortid.generate(), name: 'John Wilson', phone: '' },
+		{ id: shortid.generate(), name: 'Jane Wilson', phone: '' }
 	]
 };
 
@@ -26,14 +26,14 @@ const findById = (id) => {
 };
 
 const createContact = data => {
-	if(!data.name) {
+	if (!data.name) {
 		throw new Error('Contact name is required');
 	}
 	return db.get('contacts').push({ ...data, id: shortid.generate() }).write();
 };
 
 const editContact = async (id, data) => {
-	if(!data.name) {
+	if (!data.name) {
 		throw new Error('Contact name is required');
 	}
 	await db.get('contacts').find({ id }).assign({ ...data, id }).write();

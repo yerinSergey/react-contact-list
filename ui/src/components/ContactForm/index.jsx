@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 import withValidation from '../../common/validation/with-validation';
 import { createValidator } from '../../common/validation/validator';
-import { validateFullName, validatePhone, validateRequired } from '../../common/validation/validators';
+import {
+	validateFullName,
+	validatePhone,
+	validateRequired
+} from '../../common/validation/validators';
 
 import './styles.css';
 
@@ -23,8 +27,10 @@ class ContactForm extends Component {
 	};
 
 	static defaultProps = {
-		onSubmit: () => {},
+		onSubmit: () => {
+		},
 	};
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -45,7 +51,7 @@ class ContactForm extends Component {
 		event.preventDefault();
 		const isValid = this.props.validate(this.state);
 
-		if(isValid) {
+		if (isValid) {
 			this.props.onSubmit(this.state);
 		}
 	}

@@ -11,12 +11,12 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Route exact path="/" component={ContactList} />
-				<Route path="/create" component={CreateContact} />
-				<Route path="/edit/:id" component={EditContact} />
+				<Route exact path="/" component={ContactList}/>
+				<Route path="/create" component={CreateContact}/>
+				<Route path="/edit/:id" component={EditContact}/>
 			</Router>
 		);
 	}
 }
-	
+
 export default App;
