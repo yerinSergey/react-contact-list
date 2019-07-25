@@ -11,7 +11,7 @@ In this challenge you are going to build a contact list as a single-page-applica
 	* Handle errors (i.e. missing name)
 		* If an error occurs it should be visible to the user
 	* When successfully saving a contact the user should get redirected back to the list
-	* Buttons in the header sould have some kind of hover-state
+	* Buttons in the header should have some kind of hover-state
 	* Write at least one test
 
 * Bonus tasks UI:

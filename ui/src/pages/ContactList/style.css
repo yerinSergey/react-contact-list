@@ -1,0 +1,44 @@
+.contacts-list {
+  font-family: 'Roboto', sans-serif;
+}
+
+tr > td:last-of-type span {
+  display: none;
+}
+
+table tr:hover .action-cell span {
+  display: inline;
+}
+
+.table td {
+  color: #1E252E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.column-title {
+  color: #4B5562;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 391.37px;
+  text-align: left;
+}
+
+.active-column-title {
+  color: #4A90E2;
+}
+
+.table .action-cell {
+  padding: 0.4rem;
+}
+
+.action-cell .btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}

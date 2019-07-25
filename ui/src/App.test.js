@@ -1,7 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
+
 import App from './App';
+import ContactList from './pages/ContactList';
 
 it('renders without crashing', () => {
-	throw new Error('Please write test');
+		const wrapper = shallow(<App />);
+		expect(wrapper.find(ContactList)).toBeDefined();
 });

@@ -21,6 +21,10 @@ const findContacts = () => {
 	return db.get('contacts').value();
 };
 
+const findById = (id) => {
+	return db.get('contacts').find({ id }).value();
+};
+
 const createContact = data => {
 	if(!data.name) {
 		throw new Error('Contact name is required');
@@ -48,5 +52,6 @@ module.exports = {
 	findContacts,
 	createContact,
 	editContact,
-	deleteContact
+	deleteContact,
+	findById
 };

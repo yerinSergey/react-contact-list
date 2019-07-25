@@ -1,0 +1,68 @@
+.container {
+  max-width: 830px;
+  margin: 0 auto;
+  width: 100%;
+  color: #ffffff;
+  background-color: #FFFFFF;
+}
+
+.header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 102px;
+  background-color: #3367c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 25px 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header h1 {
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  line-height: 46px;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.sub-title {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+section {
+  border-radius: 3px;
+  box-shadow: 0 10px 20px 0 rgba(75, 85, 98, 0.2);
+  min-height: 500px;
+  width: 100%;
+}
+
+.button-groups .btn {
+  color: #6ca5e8;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
+}
+
+.button-groups .cancel-btn {
+  width: 100px;
+  padding-top: 0.6em;
+  color: #ffffff;
+}
+
+.button-groups .cancel-btn:hover {
+  color: #212529;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    margin: 50px auto;
+  }
+}
