@@ -1,5 +1,5 @@
 const low = require('lowdb');
-const shortid = require('shortid')
+const shortid = require('shortid');
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync(__dirname + '/db.json');
 const db = low(adapter);

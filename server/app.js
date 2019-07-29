@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 9898;
 const bodyParser = require('body-parser');
 const cors = require('./lib/cors');
 
@@ -13,4 +12,4 @@ app.use((req, res, next) => {
 
 app.use('/contacts', require('./contacts'));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+module.exports = app;
