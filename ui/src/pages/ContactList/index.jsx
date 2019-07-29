@@ -29,8 +29,8 @@ export default class ContactList extends Component {
 		return this.setState({ contacts: this.sortContacts(order, contacts), isLoading: false });
 	}
 
-	handleDelete = async ({ target }) => {
-		await contactsService.delete(target.dataset.id);
+	handleDelete = async ({ currentTarget }) => {
+		await contactsService.delete(currentTarget.dataset.id);
 
 		this.fetchContacts();
 	}
